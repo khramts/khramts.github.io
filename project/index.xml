@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on </title>
+    <link>/project/</link>
+    <description>Recent content in Projects on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Katya Khramtsova</copyright>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Assocplots: a Python package for static and interactive visualization of multiple-group GWAS results</title>
+      <link>/project/assocplots/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/assocplots/</guid>
+      <description>
+
+&lt;h2 id=&#34;background:67f6afc41fc968d18a51cffa0024dcf1&#34;&gt;Background&lt;/h2&gt;
+
+&lt;p&gt;Over the last decade plethora of genome-wide association studies (GWAS) data has been generated, requiring development of novel tools for visualization of large quantities of data. Quantile-quantile plots and Manhattan plots are the classical tools which have been utilized to present GWAS results and identify variants that are significantly associated with traits of interests. However, static visualizations are rather limiting in the information that can be shown. It is only in recent years that dynamic, interactive visualization has become more widely adopted, however it has not yet become a routine part of GWAS data analysis. Interactive data visualization not only allows to more clearly represent multidimensional data, but also encourages viewer’s engagement from simple data browsing to providing a platform for answering specific scientific questions, in ways that static data cannot. Here we present a package for viewing GWAS results not only using classic static Manhattan and quantile-quantile plots, but also through interactive extension which allows to visualize data interactively: zoom into dense regions, quickly obtain underlying details (e.g. SNP rs number or gene name, base pair position, p-value) by selecting a peak of interest, and visualizing the relationships between GWAS results from multiple groups. Furthermore, a scientist might be interested in comparing GWAS results from multiple groups: (1) various traits/phenotypes measured in a group of individuals, (2) same phenotype measured among distinct groups of individuals such as males and females, (3) expression quantitative loci measures across different tissues, and (4) various experimental conditions such as before and after drug treatment, to name a few. Our tool makes it possible to browse multiple charts in real-time to better understand the relationships among multiple groups.&lt;/p&gt;
+
+&lt;h2 id=&#34;examples:67f6afc41fc968d18a51cffa0024dcf1&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;p&gt;Here is an example of the static inverted Manhattan plot (also known as the Chicago plot) and a quantile-quantile plot that can be generated using &lt;a href=&#34;https://github.com/khramts/assocplots&#34;&gt;assocplots&lt;/a&gt;. The &lt;a href=&#34;https://www.broadinstitute.org/collaboration/giant/index.php/GIANT_consortium_data_files&#34;&gt;data&lt;/a&gt; plotted here are from the GIANT Consortium and are fully described in Randall JC, Winkler TW, Kutalik Z, Berndt SI, Jackson AU, Monda KL, et al. (2013) Sex-stratified Genome-wide Association Studies Including 270,000 Individuals Show Sexual Dimorphism in Genetic Loci for Anthropometric Traits. PLoS Genet 9(6): e1003500. &lt;a href=&#34;http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1003500&#34;&gt;doi:10.1371/journal.pgen.1003500&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;text-align:center&#34;&gt;&lt;img src =&#34;/img/Manhattan_Hip_inverted.png&#34; /&gt;&lt;img src =&#34;/img/qq_two_hip_groups.png&#34; /&gt;&lt;/div&gt;
+
+&lt;p&gt;The interactive plot of the same data can be found &lt;a href=&#34;http://khramts.github.io/output.html&#34;&gt;here&lt;/a&gt;. Note, due to the limitations (see below), only the top few significant points are displayed.&lt;/p&gt;
+
+&lt;h2 id=&#34;implementation:67f6afc41fc968d18a51cffa0024dcf1&#34;&gt;Implementation&lt;/h2&gt;
+
+&lt;p&gt;Assocplots is implemented as a package for the Python programming language. Its basic functionality includes plotting interactive data visualization for viewing in the browser as well as static publication quality plots. The package is designed to be used both in Jupyter notebooks and in command line. Visualizing GWAS data in a web-based document (notebook), ensures data analysis reproducibility and makes it conveniently sharable with collaborators via online repository like GitHub. The assocplots package is open source and distributed via &lt;a href=&#34;https://github.com/khramts/assocplots&#34;&gt;GitHub&lt;/a&gt; along with examples, documentation and installation instructions.&lt;/p&gt;
+
+&lt;h2 id=&#34;limitations:67f6afc41fc968d18a51cffa0024dcf1&#34;&gt;Limitations&lt;/h2&gt;
+
+&lt;p&gt;Generally, interactive visualization made through web browsers are limited by the number of objects they can smoothly display. The current example shows the top (most significant) 1,000 SNPs in each of the two groups, with matching SNPs in the opposite group. To address this limitation, the package can be extended to a web application with dynamic data loading from a database/server. Dynamic data loading would allow to load SNP data in real time for a specific region of interest as the user zooms-in. By making this an open source package that is accessible via GitHub, we invite members of the scientific community to contribute and enhance the package’s capabilities.&lt;/p&gt;
+
+&lt;h2 id=&#34;presentation:67f6afc41fc968d18a51cffa0024dcf1&#34;&gt;Presentation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;/EAK_BofG_2016_poster_050216.pdf&#34;&gt;Poster&lt;/a&gt;, Biology of Genomes, May 2016, Cold Spring Harbor Laboratories.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Characterization of genetic basis underlying sex difference in neuropsychiatric diseases</title>
+      <link>/project/sex_psych/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/sex_psych/</guid>
+      <description>&lt;p&gt;Obsessive-compulsive disorder (OCD) is a heritable neuropsychiatric phenotype with complex etiology. Like many others, this neuropsychiatric phenotype exhibits differences in clinical features between males and females, however, no study to date has characterized the genome-wide sex-specific genetic basis of these traits. The genome-wide association studies published to date using large OCD cohorts to uncover genetic contributors to disease, have not identified genome-wide significant genetic associations. This could be due to lack of sufficient power to detect small genetic effects and to characterize effects of rare genetic variants, consistent with the observation that OCD exhibits a highly polygenic architecture . Additionally, given the differences in the clinical features of OCD (earlier age of onset in males) between sexes, it is reasonable to hypothesize that genetic liability is influenced by sex-specific factors.&lt;/p&gt;
+
+&lt;p&gt;I am leading a project that explores the genetic role of sex in OCD. The aims of the project are
+to (1) investigate the genetic architectural differences driving sexually dimorphic features of OCD, and (2) to develop a novel analytic framework for sex-stratified genomic analysis. In the long-term the outcomes of this work will enable a deeper understanding of how genetic variants may regulate the biological processes influencing sex-biased phenotype development and provide insight into identifying sex-specific clinically targetable pathways.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Graduate and undergraduate thesis projects</title>
+      <link>/project/phd_thesis/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/phd_thesis/</guid>
+      <description>
+
+&lt;h2 id=&#34;graduate-thesis-project:2a18304c1a41cdc822d9425c90153a7c&#34;&gt;Graduate thesis project&lt;/h2&gt;
+
+&lt;p&gt;In my graduate work, I investigated the role of intestinal barrier function in inflammatory bowel disease (IBD) in the laboratory of Jerrold Turner. I focused on the tight junction protein claudin-2, which creates paracellular pores carrying water and small cations across epithelia, and whose expression is upregulated in IBD.
+&lt;div style=&#34;text-align:center&#34;&gt;&lt;img src =&#34;/img/Fgure12-white.jpg&#34; /&gt;&lt;/div&gt;
+Using a murine models of IBD, I have shown that claudin-2 upregulation is required for increased sodium and water flux into the intestinal lumen resulting in diarrhea, one of the IBD symptoms. For the first time, my project examined the potential therapeutic role of claudin-2 pore disruption through inhibition of Casein Kinase 2 (CK2), a molecule upstream of the pore regulation. I have shown that treatment of colitic mice with a CK2 inhibitor suppresses increased sodium flux and water into the intestinal lumen ameliorating the severe symptoms of IBD. The impact of this work has been acknowledged by the scientific community and was chosen for a basic science plenary presentation at the Digestive Disease Week Conference in 2014. Through this research I became interested in clinical pharmacology and the interplay of genetics and response to drug treatment.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, during my doctoral training I contributed my expertise in experimental models of IBD and morphological analysis to two collaboration projects (1) exploring the role of cytoskeletal components in tight junction dysregulation, loss of barrier function, and colitis &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/23619146&#34;&gt;Su et al. 2013 Gastro&lt;/a&gt;; and (2) exploring the role of intestinal sterol regulatory element-binding protein 2 in upregulation of serum cholesterol &lt;a href=&#34;http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0084221&#34;&gt;Ma et al. 2014 PLoS ONE&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;undergraduate-thesis-project:2a18304c1a41cdc822d9425c90153a7c&#34;&gt;Undergraduate thesis project&lt;/h2&gt;
+
+&lt;p&gt;Prior to graduate school, I worked in the laboratory of Larisa Nonn in the Pathology Department at the University of Illinois at Chicago studying the role of microRNAs in regulation of zinc homeostasis in normal and cancerous prostate tissue. By using human prostate cancer tissue samples and prostate cancer cell lines we have demonstrated that miR-183-96-182 cluster regulates prostate carcinogenesis via a zinc transporter, hZip1 &lt;a href=&#34;http://www.jbc.org/content/286/52/44503.long&#34;&gt;Mihelich, Khramtsova, et al. 2011, J Biol Chem&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pharmacogenomics</title>
+      <link>/project/pharmacogenomics/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/pharmacogenomics/</guid>
+      <description>&lt;p&gt;Idelalisib is a phosphoinositide 3-kinase (PI3K) inhibitor used for the treatment of chronic lymphocytic leukemia and follicular lymphoma.  Clinical responses to idelalisib vary widely, and have not been explained by clinical features or somatic variation.  This study investigated potential genetic and epigenetic contributors to variability in drug response. In the project lead by Drs. Kristen Pettit and Eileen Dolan, I have performed a genome-wide association study, eQTL enrichment analysis, and correlation of the drug response with RNA expression data in HapMap YRI cell lines to explore the pharmacogenomic variants associated with cellular sensitivity to Idelalisib.&lt;/p&gt;
+
+&lt;p&gt;The abstract submitted by Dr. Pettit to the annual ASCPT has been selected for showcase of top trainee abstracts.
+&lt;div style=&#34;text-align:center&#34;&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/_0BPoMgjKlg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Publication in preparation.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

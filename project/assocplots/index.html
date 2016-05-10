@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme" content="hugo-academic" />
+    <meta name="generator" content="Hugo 0.15" />
+    <meta name="author" content="Ekaterina (Katya) Khramtsova" />
+    <meta name="description" content="Postdoctoral Scholar" />
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/github.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/academicons.min.css" />
+    <link rel="stylesheet" href="/css/hugo-academic.css" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+
+    <title>Assocplots: a Python package for static and interactive visualization of multiple-group GWAS results | </title>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+    <div class="container">
+
+        
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"></a>
+        </div>
+
+        
+        <div class="collapse navbar-collapse" id="#navbar-collapse-1">
+
+            
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li class="nav-item"><a href="/#bio">Home</a></li>
+                
+                <li class="nav-item"><a href="/#projects">Projects</a></li>
+                
+                <li class="nav-item"><a href="/#contact">Contact</a></li>
+                
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <h1>Assocplots: a Python package for static and interactive visualization of multiple-group GWAS results</h1>
+    <a class="btn btn-primary btn-outline" href="https://github.com/khramts/assocplots">Go to Project Site</a>
+    <div class="post">
+        
+
+<h2 id="background:67f6afc41fc968d18a51cffa0024dcf1">Background</h2>
+
+<p>Over the last decade plethora of genome-wide association studies (GWAS) data has been generated, requiring development of novel tools for visualization of large quantities of data. Quantile-quantile plots and Manhattan plots are the classical tools which have been utilized to present GWAS results and identify variants that are significantly associated with traits of interests. However, static visualizations are rather limiting in the information that can be shown. It is only in recent years that dynamic, interactive visualization has become more widely adopted, however it has not yet become a routine part of GWAS data analysis. Interactive data visualization not only allows to more clearly represent multidimensional data, but also encourages viewer’s engagement from simple data browsing to providing a platform for answering specific scientific questions, in ways that static data cannot. Here we present a package for viewing GWAS results not only using classic static Manhattan and quantile-quantile plots, but also through interactive extension which allows to visualize data interactively: zoom into dense regions, quickly obtain underlying details (e.g. SNP rs number or gene name, base pair position, p-value) by selecting a peak of interest, and visualizing the relationships between GWAS results from multiple groups. Furthermore, a scientist might be interested in comparing GWAS results from multiple groups: (1) various traits/phenotypes measured in a group of individuals, (2) same phenotype measured among distinct groups of individuals such as males and females, (3) expression quantitative loci measures across different tissues, and (4) various experimental conditions such as before and after drug treatment, to name a few. Our tool makes it possible to browse multiple charts in real-time to better understand the relationships among multiple groups.</p>
+
+<h2 id="examples:67f6afc41fc968d18a51cffa0024dcf1">Examples</h2>
+
+<p>Here is an example of the static inverted Manhattan plot (also known as the Chicago plot) and a quantile-quantile plot that can be generated using <a href="https://github.com/khramts/assocplots">assocplots</a>. The <a href="https://www.broadinstitute.org/collaboration/giant/index.php/GIANT_consortium_data_files">data</a> plotted here are from the GIANT Consortium and are fully described in Randall JC, Winkler TW, Kutalik Z, Berndt SI, Jackson AU, Monda KL, et al. (2013) Sex-stratified Genome-wide Association Studies Including 270,000 Individuals Show Sexual Dimorphism in Genetic Loci for Anthropometric Traits. PLoS Genet 9(6): e1003500. <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1003500">doi:10.1371/journal.pgen.1003500</a></p>
+
+<div style="text-align:center"><img src ="/img/Manhattan_Hip_inverted.png" /><img src ="/img/qq_two_hip_groups.png" /></div>
+
+<p>The interactive plot of the same data can be found <a href="http://khramts.github.io/output.html">here</a>. Note, due to the limitations (see below), only the top few significant points are displayed.</p>
+
+<h2 id="implementation:67f6afc41fc968d18a51cffa0024dcf1">Implementation</h2>
+
+<p>Assocplots is implemented as a package for the Python programming language. Its basic functionality includes plotting interactive data visualization for viewing in the browser as well as static publication quality plots. The package is designed to be used both in Jupyter notebooks and in command line. Visualizing GWAS data in a web-based document (notebook), ensures data analysis reproducibility and makes it conveniently sharable with collaborators via online repository like GitHub. The assocplots package is open source and distributed via <a href="https://github.com/khramts/assocplots">GitHub</a> along with examples, documentation and installation instructions.</p>
+
+<h2 id="limitations:67f6afc41fc968d18a51cffa0024dcf1">Limitations</h2>
+
+<p>Generally, interactive visualization made through web browsers are limited by the number of objects they can smoothly display. The current example shows the top (most significant) 1,000 SNPs in each of the two groups, with matching SNPs in the opposite group. To address this limitation, the package can be extended to a web application with dynamic data loading from a database/server. Dynamic data loading would allow to load SNP data in real time for a specific region of interest as the user zooms-in. By making this an open source package that is accessible via GitHub, we invite members of the scientific community to contribute and enhance the package’s capabilities.</p>
+
+<h2 id="presentation:67f6afc41fc968d18a51cffa0024dcf1">Presentation</h2>
+
+<p><a href="/EAK_BofG_2016_poster_050216.pdf">Poster</a>, Biology of Genomes, May 2016, Cold Spring Harbor Laboratories.</p>
+
+    </div>
+
+    <nav>
+    <ul class="pager">
+        
+        <li class="previous"><a href="/project/sex_psych/"><span aria-hidden="true">&larr;</span> Characterization of genetic basis underlying sex difference in neuropsychiatric diseases</a></li>
+        
+
+        
+    </ul>
+</nav>
+
+
+    <footer class="site-footer">
+    <div class="inner">
+        <p class="powered-by">
+
+            &copy; 2016 Katya Khramtsova &middot; 
+
+            Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+            <span class="pull-right"><a href="#top" id="back_to_top"><span class="button_icon"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></span></a></span>
+
+        </p>
+    </div>
+</footer>
+
+
+</div>
+        <script src="/js/jquery-1.12.3.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/hugo-academic.js"></script>
+
+        
+
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+        
+        
+
+    </body>
+</html>
+
